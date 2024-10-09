@@ -1,5 +1,7 @@
 @import "variaveis.less";
 @import "config.less";
+@breakpointMobile: ~"(max-width: 767px)";
+@breakpointTablet: ~"(max-width: 1023px)";
 
 body{
     background-color: @corDeFundo;
@@ -10,19 +12,43 @@ body{
         margin: 12px 0;
     }
 
+    h2{
+        margin-bottom: 12px;
+    }
+
     img{
         margin-top: 12px;
     }
+}
 
+.container{
+    max-width: 760px;
+    width: 100%;
+    margin: 0 auto;
+    ul{
+        li{
+            margin: 12px 0;
+            list-style: none;
 
-    li{
-        list-style: none;
-        margin: 12px 0;
+            div{
+                background-color: @corDeBotoes;
+                padding: 8px;
 
-        a{
-            text-decoration: none;
-            color: @corDoTexto;
-
+                a{
+                    text-decoration: none;
+                    color: @corDoTexto;
+                }
+            }
         }
     }
+    
+    @media @breakpointTablet{
+        width: 90%;
+    }
+
+    @media @breakpointMobile{
+        width: 70%;
+    }
+
 }
+

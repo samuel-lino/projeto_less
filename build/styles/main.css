@@ -11,14 +11,36 @@ body {
 body h1 {
   margin: 12px 0;
 }
+body h2 {
+  margin-bottom: 12px;
+}
 body img {
   margin-top: 12px;
 }
-body li {
-  list-style: none;
-  margin: 12px 0;
+.container {
+  max-width: 760px;
+  width: 100%;
+  margin: 0 auto;
 }
-body li a {
+.container ul li {
+  margin: 12px 0;
+  list-style: none;
+}
+.container ul li div {
+  background-color: #00a8ff;
+  padding: 8px;
+}
+.container ul li div a {
   text-decoration: none;
   color: #f5f6fa;
+}
+@media (max-width: 1023px) {
+  .container {
+    width: 90%;
+  }
+}
+@media (max-width: 767px) {
+  .container {
+    width: 70%;
+  }
 }
