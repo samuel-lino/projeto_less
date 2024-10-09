@@ -1,0 +1,16 @@
+{
+  "name": "less",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "less": "lessc-watch ./src/styles/main.less ./build/styles/main.css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Samuel",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "less": "^4.2.0",
+    "lessc-watch": "^1.2.0"
+  }
+}
